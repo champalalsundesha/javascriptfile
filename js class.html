@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>javascript</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" href="https://cdn.icon-icons.com/icons2/2108/PNG/512/javascript_icon_130900.png">
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
+</head>
+<body>
+
+    <script>
+        //   var = we can change value and again declare also
+
+        var a = 10;
+        var a = 15;
+        a = 20;
+        console.log(a);
+
+        // Let = we can change value but we are not aagin declare 
+
+      let b = "hiii";
+    //   let b = "NO";  error
+         b = "no";
+      console.log(b);
+
+        //  const = we can not change value and again declare
+
+        const f = 458;
+        // f = 2;    error
+         // const f = "js"    error
+        console.log(f);
+
+        function name() {
+            console.log("Hello world");
+        }
+        name();
+
+        function para(name) {
+            console.log("this is a " + name);
+        }
+        para("Javascript");
+        para("HTML");
+        para("CSS");
+
+        function two(num, sum) {
+            console.log(num + sum);
+        }
+        two(25, 45)
+
+            // Question number and string
+        
+        console.log("5" + 2 + 5 + 3);  //5253
+        console.log(2 + 3 + "7" + 4)   //574
+
+               // if else statement
+               // NaN function
+
+        let m = "54";
+        if (NaN == m) {
+            console.log("this is string");
+        }else{
+            console.log(" is number")
+        }
+        console.log(typeof typeof NaN);
+
+        const value = "154";
+        console.log(typeof typeof value);
+
+        var value1 = true;
+        console.log(typeof typeof value1);
+
+        let  un; 
+        console.log(typeof un);
+
+        let n = null; 
+        console.log( n);
+
+        let num = 5;
+        function number(x) {
+            var sum = x * x;
+            return sum;
+        }
+        console.log(number(num));
+
+        let nn = 45;
+        if (nn === 45) {
+            console.log("true")
+        }else{
+            console.log("false");
+        }
+
+
+              //  Arrow function
+
+
+        let mm = () => console.log("hello world");
+        mm();
+            
+        const mnt = (mn) => mn * mn;
+        let multi = mnt(5);
+        console.log(multi);
+ 
+
+           // if else statement in Arrow function
+
+ 
+        let age = 21
+        let arrow = (age > 25) ? console.log("Baby") : console.log("Adult");
+
+        let eq = "world";
+        let equal = () => eq === "hello" ? console.log("true") : console.log("false");
+        equal();
+
+        let print = (b) => console.log("My aim is " + b);
+        print("developer");
+
+        const pp = (p) => console.log(`My ${p} is developer`)
+        pp("goal");
+
+            //  Arrays function
+
+        let arr = [4, 5, 6, 7, 8, 9, 10];
+        let arr1 = ["a", "c", "m"];
+           
+        let mix = arr1.concat(arr);
+        console.log(mix);
+
+        let array = [5, 2, 4, 7, 3, 1, 8];
+
+        array.sort();
+        console.log(array);
+        
+        // const sort = array.filter(sort => array <= 8);
+        // console.log(sort[array]);
+
+
+
+        //  lecture time
+
+        // lexical evnirment  
+    function test() {
+      
+        test2()
+        function test2() {
+         
+            test3()
+            function test3() {
+                var x = 10;
+                console.log(x)
+            }
+        }
+    }
+    test();
+
+    console.log(5 == 5.2);
+
+       // Global Scope
+
+    let glo = 452;
+    function bal() {
+        console.log(glo);
+    }
+    bal();
+
+       // Local Scope
+
+    // function loc(params) {
+    //      const sc = 10;        
+    // }
+
+    // console.log(sc);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>javascript</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+
+    <script>
+        function a() {
+            console.log("Hiii a");
+        }
+        function b() {
+            console.log("hii b");
+        }
+        function c() {
+            console.log("hii c");
+        }
+
+        c(a());
+        b(c())
+
+
+        function fun(para) {
+            console.log("let's move " + para);
+        }
+       function game() {
+        fun("yes");
+        console.log("towords");
+       }
+
+       game();
+
+
+       function test() {
+         console.log("yes you can");
+       }
+
+       function testing() {
+        console.log("you can't");
+       }
+
+       function latest(age) {
+         if(age > 21){
+            test();
+         }
+         else{
+            testing();
+         }
+       }
+
+       latest(2);
+
+       let es6 = () => console.log("this is new function");
+       es6();
+
+       let con = (age) => {
+        if(age > 18){console.log("do it")}
+        else{console.log("do'nt")}
+    }
+       con(21)
+
+       const re = (sum) => {return sum * sum};
+       console.log(re(4));
+
+            // ECMAScript
+            // Spread Operator
+      
+      let name = "h      iiii";
+      console.log(...name);
+
+      let arr = [10, 20, 30, 40, 50, 60];
+      console.log(...arr);
+
+      document.write(...arr, "<br>");
+      document.write(...arr);
+
+      const arr1 = ["ha    ri ", "namo ", "shiva "];
+      document.write(arr1, "<br>");
+      document.write(...arr1);
+
+      let fil = [10, 20, 30, 40, 50, 60];
+      let check =  fil.filter((ele) => ele > 30);
+     console.log(check);
+      
+
+      let map = fil.map((ele) => ele * 2);
+      console.log(map);
+    </script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>learning javascript</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+
+    <script>
+        let user1 = {
+            Name: "Rami",
+            age:  40,
+            Position: "Javascript Expert",
+            Address:{
+                State: "Rajasthan",
+                District: "jalore",
+                pincode: 343022,
+            }
+        }
+
+        console.log(user1.Address);
+        document.write(user1.Name);
+
+        let user2 = user1    // Shallow copy 
+        user2.companyName = "amazon";
+        user2.age = 20;
+        user2.Address.pincode = 44445;
+        console.log(user2)
+        console.log(user1)
+
+        let user3 = Object.assign({}, user1);   // this is the deep copy
+        user1.car = "swift";  // it will not run if you use user2 it will run
+        console.log(user3);
+
+        let user4 = {...user1};   //deep copy
+        user4.bike = "passion pro"
+        console.log(user4);
+
+        function ages(age) {
+            if(age > 21){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+
+      console.log(ages(14));
+
+      console.log(t);
+      var t = 20;
+  
+               // Group block statement
+       
+      {
+        console.log("hiii");
+        var n = 45;
+        console.log(n);
+      }
+
+            // setInterval
+      
+    //   let tt = 10;
+    //   function time() {
+        
+    //   }
+
+    //   setInterval(time(), 1000);
+
+    //   let tt = 10;
+    //   function time(tt) {
+    //     for(var i = 0; i < tt.length; i++){
+    //         console.log(tt);
+    //     }
+    //   }
+    //   setInterval(time, 1000);
+
+    let arr = [4, 5, 6, 8, 8, 9, 10];
+    //  for(var i = 0; i < arr.length; i++){
+    //     console.log(arr);
+    //  }
+//   let a = 2;
+//     while(a < 5){
+//         console.log(arr);
+//         a++;
+//     }
+//        var m = 0;
+//       function set() {
+//         m += 5;
+//        document.write(m, '<br>')
+//       }
+//       var rr = setInterval(set, 1000);
+//       clearInterval(rr)
+     
+
+     var tt = 0;
+   var stop = setInterval(time, 1000)
+   function time() {
+       tt += 5;
+       if(tt == 30){
+          clearInterval(stop);
+       }
+       else{
+          console.log(tt);
+       }
+   }
+
+    </script>
+</body>
+</html>

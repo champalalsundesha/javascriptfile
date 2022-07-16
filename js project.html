@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>js Project</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+</head>
+<body>
+    
+
+
+    <script>
+        // let a = 0;
+        // var stop = setInterval(() => {
+        //     a += 5;
+        //    console.log(a);
+        //   if(a == 30){
+        //       clearInterval(stop)
+        //   }
+        // }, 1000);
+
+       
+             // USing setTimeOut
+
+
+        setTimeout(() => {
+            
+            console.log("Your output is print");
+        }, 1000);
+
+
+
+        function name() {
+            console.log("first name");
+        }
+
+        function name2(nn) {
+            console.log("second name " + nn);
+        }
+
+        function name3() {
+            console.log("third name");
+        }
+
+        function print(age) {
+            if(age == 20){
+                name();
+            }
+            else if(age < 18){
+                name2("yes great");
+            }
+            else{
+                name3()
+            }
+        }
+       
+        print(10);
+
+             // Arrow function
+        
+        setTimeout(() => {
+            console.log("this is timer");
+        }, 2000);
+
+
+        function time() {
+            console.log("name name");
+          }
+    
+          setInterval(time(), 1000);
+
+        function fun() {
+            console.log("first print good");
+        }
+        function fun2() {
+            for(var i = 1; i < 5; i++){
+                console.log(i);
+            }
+        }
+        function fun3(funn) {
+            if (funn == 21) {
+                setTimeout(fun(), 1000)
+            }else{
+                setTimeout(fun2(), 1000)
+            }
+        }
+      
+       fun3(2);
+
+    //    let year =prompt("Ecmascript launch date")
+    //    if(year == 2015){
+    //     console.log("great");
+    //    }
+    //    else{  
+    //     console.log("no");
+    //    }
+
+
+        // Project 
+
+      
+        let today = new Date();
+        var day = today.getDay(); 
+        let daylist = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        document.write("today is " + daylist[day]);
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Learning Javascript</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREa-hmROx411j_VsOMJwyzRb8j7jPc1XmfBg&usqp=CAU">
+</head>
+<body>
+
+
+    <script>
+              // make a array list
+        const arr = ["aa", 45, null, "jnb", "js", undefined];
+        arr.push(80);
+        const arrfil = arr.filter(Boolean);
+        console.log(arrfil);
+
+        var arr1 = [10, 20, 30, 40, 50, 60];
+        arr1.push(70);       // add another array
+        arr1.pop();   // remoove array from last side
+        arr1.pop();
+        arr1.shift();    // remove array from front of side
+        arr1.unshift();    // add element from front od side
+        arr1.splice();
+        // console.log(arr1.length);
+        console.log(arr1);
+        
+
+                  // Popup message
+        
+        // let al = alert("hello world")
+        // let con = confirm("you are confirm") 
+        // let pr = prompt("this is messare")
+        // alert(pr)
+
+        // let po = prompt("what is your age");
+        // alert("your age is " + po)
+
+
+            //  Convert data types
+            //   data types
+
+        let num = "452";
+        let num1 = Number(num);
+        console.log(typeof num1)
+        console.log(num1);
+   
+        console.log(Number(true))
+        console.log(Number(false))
+
+        console.log("2" * "2");
+        var n = "4";
+        var n1 = "4";
+        var nn = n * n1;  // convert string to number
+        console.log(typeof nn);
+
+        let x = 5;
+        x = +x;  // positive value print = 5;
+        x = -x  // Negative value print = -5;
+        // x = *x  // error
+        console.log(x);
+
+        // alert(3 ** 3);   output = 27
+        // console.log(5 + 5 + "2")
+        console.log(2 + "2");     // 4
+        console.log(2 - "4");    // -2
+
+        let a, b, c;
+        a = b = c = 2 + 2;
+
+        console.log(a);   // 4
+        console.log(b);   // 4
+        console.log(c);   // 4
+
+        let v = 4 + 5;
+        console.log(v);
+
+        // let n = 2;    // you can also write
+        // n = n + 5;   // n += 5;
+        // n = n * 2;   // n *= 2
+        // let n = 2;
+       
+      let count = (1 + 2, 4 + 2)   // 6
+      console.log(count);
+
+      let cc = (4, 5, 2, 7, 45);   // 45
+      console.log(cc);
+
+      console.log("" + 2 + 4);    // 24
+      console.log("" - 2 + 4);    // 2
+      console.log(true + false);  // 1
+      console.log(true - false);  // 1
+      console.log(6 / "3");       // 2
+      console.log("px" + 4 + 5);  // px45
+      console.log("4px" - 2);    // NaN
+      console.log("-9" + 5);   // -95
+      console.log("- 9 " + 5);   // - 9 5
+      console.log("-9" - 5);   // -14
+      console.log(null + 1);   // 1
+      console.log(undefined + 2);  // nan
+      console.log("2" > "12")    // true
+      
+
+      let move = [10, 20, 30, 40, 50, 60];
+      const big = move.filter(great);
+
+      function great(move) {
+        return move >= 40;
+      }
+      console.log(big);
+
+          // Write in short hand
+     
+     const mm = move.filter(function (move) {
+          return move <= 40;
+     })
+       console.log(mm);
+
+
+           // Print positive number in array
+     var po = [1, 2, -3, 4, -5, -6, 7, 8, 9];
+     let pr = po.filter(function (po) {
+        return po >= 0;
+     })
+     
+     console.log(pr);
+
+     let again = [-2, 4, -7, 8, -9, 3, -10, 5];
+     again.sort();
+     const print = again.filter(function (again) {
+         return again >= 0;
+     })
+     
+     console.log(print);
+
+           // Print reverse of array
+
+      const array = [3, 2, 2, 4, 3]
+      let length = array.indexOf;
+      for(var i = length; i > 0; i--);
+      console.log(array);
+
+    </script>
+</body>
+</html>
